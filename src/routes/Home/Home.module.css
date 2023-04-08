@@ -1,0 +1,168 @@
+.container {
+    width: 100%;
+    max-width: 1366px;
+    padding: 16px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #d7232c;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: animation 2s ease-out;
+    position: relative;
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0;
+        left: -1000px;
+    }
+
+    100% {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.imageOne, .imageTwo {
+    display: none;
+}
+
+.search {
+    width: 200px;
+    border: none;
+    background-color: inherit;
+    color: #7572F4;
+    border-bottom: 2px solid #7572F4;
+    padding-bottom: 4px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.search::placeholder {
+    color: #7572F4;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.search:focus {
+    border: none;
+    outline: none;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.listItem {
+    padding: 0px 4px 4px 4px;
+}
+
+.link {
+    display: inline-flex;
+    padding: 2px 4px;
+    background-color: #ffeb26;
+    border-radius: 6px;
+    border: 2px solid #7572F4;
+    color: #FF3E6D;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition-property: transform;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+}
+
+.link:hover {
+    transform: scale(1.07);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 48px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .imageOne {
+        display: block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform: rotate(-10deg);
+        animation: animationImg 1.5s ease-out;
+    }
+
+    .imageTwo {
+        display: block;
+        width: 120px;
+        height: 140px;
+        animation: animationImgTwo 1.5s ease-out;
+        position: relative;
+    }
+
+    @keyframes animationImg {
+        0% {
+            opacity: 0;
+            left: -400px;
+        }
+    
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
+    }
+
+    @keyframes animationImgTwo {
+        0% {
+            opacity: 0;
+            right: -300px;
+        }
+    
+        100% {
+            opacity: 1;
+            right: 0px;
+        }
+    }
+
+    .search {
+        width: 280px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .search {
+        width: 400px;
+    }
+}
