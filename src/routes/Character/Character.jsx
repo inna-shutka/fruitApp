@@ -29,18 +29,22 @@ export const Character = () => {
   }
 
   return (
-    <div>
-      <h1>{character.name}</h1>
-      <p>Id: {character.id}</p>
-      <p>Gender: {character.gender}</p>
-      <img src={character.image} alt={character.name} />
-      <div>
+    <div className={styles.container}>
+      <div className={styles.homeWrapper}>
+        <Link className={styles.home} to="/">Back to list</Link>
+      </div>
+      <div className={styles.info}>
+        <h1 className={styles.title}>{character.name}</h1>
+        <img className={styles.image} src={character.image} alt={character.name} />
+        <p className={styles.subtitleId}>id: {character.id}</p>
+        <p className={styles.subtitleGender}>gender: {character.gender.toLowerCase()}</p>
+      </div>
+      <div className={styles.slider}>
         {parseInt(id) > 1 && (
-          <button onClick={handlePrevClick}>Previous</button>
+          <button className={styles.slideBack} onClick={handlePrevClick}>Back</button>
         )}
-        <Link to="/">Home</Link>
         {parseInt(id) < 506 && (
-          <button onClick={handleNextClick}>Next</button>
+          <button className={styles.slideNext} onClick={handleNextClick}>Next</button>
         )}
       </div>
     </div>

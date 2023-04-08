@@ -4,7 +4,7 @@ export const IconOne = ({className}) => {
     return (
         <svg className={className}
         version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	viewBox="0 0 1005.717 316.156" enableBackground="new 0 0 1005.717 316.156"
+		viewBox="0 0 1005.717 316.156" enableBackground="new 0 0 1005.717 316.156"
         xmlSpace="preserve">
         <g>
 	<path fillRule="evenodd" clipRule="evenodd" fill="#EE2631" d="M4.649,2.858h998.209v310.439H2.932V8.005
@@ -216,8 +216,8 @@ export const IconTwo = ({className}) => {
 	return(
 		<svg className={className}
 		version="1.1" id="char-broiled_cheeseburger" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
-	x="0px" y="0px" width="220px" height="210px" viewBox="0 0 220 210" enableBackground="new 0 0 220 210" xmlSpace="preserve">
-<g id="burger_group">
+		x="0px" y="0px" width="220px" height="210px" viewBox="0 0 220 210" enableBackground="new 0 0 220 210" xmlSpace="preserve">
+        <g id="burger_group">
 	<path fill="#DF3540" d="M29.048,124.048h61.904c2.858,0,4.762-1.907,4.762-4.762c0-2.855-1.904-4.763-4.762-4.763H29.048
 		c-2.858,0-4.762,1.907-4.762,4.763C24.286,122.141,26.19,124.048,29.048,124.048"/>
 	<path fill="#004463" d="M90.952,133.571H29.048c-8.097,0-14.286-6.189-14.286-14.285c0-8.097,6.189-14.286,14.286-14.286h61.904
@@ -302,8 +302,8 @@ export const IconTwo = ({className}) => {
 	<path fill="#014463" d="M176.667,205H43.333c-15.713,0-28.572-12.858-28.572-28.571c0-8.097,6.189-14.286,14.286-14.286h161.904
 		c8.097,0,14.286,6.189,14.286,14.286C205.238,192.142,192.38,205,176.667,205 M29.048,171.667c-2.858,0-4.762,1.906-4.762,4.762
 		c0,10.477,8.571,19.048,19.048,19.048h133.333c10.477,0,19.047-8.571,19.047-19.048c0-2.855-1.906-4.762-4.762-4.762H29.048z"/>
-</g>
-</svg>
+        </g>
+        </svg>
 	)
 }
 
